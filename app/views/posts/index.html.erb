@@ -1,0 +1,17 @@
+<div class = "container-fluid m-2 pt-2">
+
+<h1>Posts</h1>
+
+    <div class="container-fluid pt-3">
+        <% @posts.each do |post|%>
+            <div class="card bg-light text-dark" style="width:400px">
+                <div class= "card-body">
+                    <h3 class="card-title"><%= post.title%></h3>
+                    <p class="card-text"><%= post.body %></p>
+                    <%= link_to 'Read more ...', post_path(post), :class => 'btn btn-light btn-sm' %>
+                </div>
+            </div>
+            <br>
+        <%end%>
+    </div>
+</div>

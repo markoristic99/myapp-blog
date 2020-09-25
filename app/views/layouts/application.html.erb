@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <style>
+  .a { color: inherit; } 
+  </style>
+
+  <head>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+    </style>
+
+    <title>MyApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Blog</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li> <%= link_to "Home", home_path, :class => 'btn btn-light'%></li>
+        </ul>
+        <ul class="navbar-nav navbar-right">
+          <li> <%= link_to "Create a new post", new_post_path, :class => 'btn btn-dark'%></li>
+        </ul>
+       </div>
+      </nav>
+
+
+  <div class = "container-fluid">
+    <%= yield %>
+  </div>
+      
+ 
+  </body>
+
+  <style type="text/css">
+    .white {color:#ffffff;}
+  </style>
+</html>
