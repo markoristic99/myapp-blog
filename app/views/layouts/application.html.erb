@@ -24,7 +24,7 @@
 
     </style>
 
-    <title>login: MyApp</title>
+    <title>MyApp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -42,10 +42,11 @@
 
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
-          <li> <%= link_to "Home", home_path, :class => 'btn btn-light'%></li>
+          <li class="nav-item"> <%= link_to "Home", home_path, :class => 'btn btn-light'%></li>
+          <li class="nav-item"> <%= link_to "About", about_path, :class => 'btn btn-light'%></li>
         </ul>
         <ul class="navbar-nav navbar-right">
-          <li> <%= link_to "Create a new post", new_post_path, :class => 'btn btn-dark'%></li>
+          <li> <%= link_to "Create a new post", new_post_path, :class => 'btn btn-dark shadow-sm'%></li>
         </ul>
        </div>
       </nav>
