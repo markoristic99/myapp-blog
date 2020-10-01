@@ -5941,3 +5941,1252 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.3ms | Allocations: 5161)
 
 
+Started GET "/" for ::1 at 2020-09-26 01:01:03 +0200
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 38.1ms | Allocations: 5236)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3263ms (Views: 3148.9ms | ActiveRecord: 16.8ms | Allocations: 35974)
+
+
+Started GET "/" for ::1 at 2020-09-26 01:01:10 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 345ms (Views: 341.2ms | ActiveRecord: 2.6ms | Allocations: 5190)
+
+
+Started GET "/posts/8" for ::1 at 2020-09-26 01:01:11 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 43.5ms | Allocations: 6850)
+  Rendered comments/_form.html.erb (Duration: 242.7ms | Allocations: 10800)
+  Rendered posts/show.html.erb within layouts/application (Duration: 318.6ms | Allocations: 18441)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 722ms (Views: 691.2ms | ActiveRecord: 14.1ms | Allocations: 24273)
+
+
+Started GET "/" for ::1 at 2020-09-26 01:01:16 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 682)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 350ms (Views: 345.1ms | ActiveRecord: 3.2ms | Allocations: 5184)
+
+
+Started GET "/posts/8" for ::1 at 2020-09-26 01:01:17 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 6.1ms | Allocations: 769)
+  Rendered comments/_form.html.erb (Duration: 1.6ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1773)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 336ms (Views: 326.0ms | ActiveRecord: 5.3ms | Allocations: 6825)
+
+
+Started GET "/" for ::1 at 2020-09-26 01:01:19 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 353ms (Views: 350.0ms | ActiveRecord: 2.1ms | Allocations: 5168)
+
+
+Started GET "/posts/8" for ::1 at 2020-09-26 01:01:24 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (4.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (4.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 6.6ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 2.8ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 383ms (Views: 370.7ms | ActiveRecord: 8.7ms | Allocations: 6801)
+
+
+Started GET "/" for ::1 at 2020-09-26 01:01:50 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 368ms (Views: 363.0ms | ActiveRecord: 3.1ms | Allocations: 5168)
+
+
+Started GET "/posts/8" for ::1 at 2020-09-26 01:02:38 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 6.7ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 3.1ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 12.0ms | Allocations: 1770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 377ms (Views: 368.2ms | ActiveRecord: 5.9ms | Allocations: 6809)
+
+
+Started POST "/posts/8/comments" for ::1 at 2020-09-26 01:02:53 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"rkZBS2CvOdifDImB5wMNkGilp1/7i3Iv5LHZUic7svOMQSdDAQwHowWJEt0kwZ55v6ib10PyhxYscnB69AuN3Q==", "comment"=>{"username"=>"Petko18", "body"=>"Napusi se kurca"}, "commit"=>"Save", "post_id"=>"8"}
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mComment Create (8.9ms)[0m  [1m[32mINSERT INTO "comments" ("username", "body", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Petko18"], ["body", "Napusi se kurca"], ["post_id", 8], ["created_at", "2020-09-25 23:02:53.168184"], ["updated_at", "2020-09-25 23:02:53.168184"]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (16.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 40ms (ActiveRecord: 27.0ms | Allocations: 4118)
+
+
+Started GET "/posts/8" for ::1 at 2020-09-26 01:02:53 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (7.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 8.5ms | Allocations: 908)
+  Rendered comments/_form.html.erb (Duration: 4.0ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 15.6ms | Allocations: 1910)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 447ms (Views: 433.5ms | ActiveRecord: 10.5ms | Allocations: 6938)
+
+
+Started DELETE "/posts/8/comments/4" for ::1 at 2020-09-26 01:03:00 +0200
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"afda/xh7XjmVZUJnlObIBG+aH1tBrIPWCOfp0qbRsOT5uLxg6fuEbVvz38YC0TbTwVBiL3HiA2vaadcjtUs+sw==", "post_id"=>"8", "id"=>"4"}
+Filter chain halted as #<Proc:0x00007fd9a854fd88@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 325)
+
+
+Started DELETE "/posts/8/comments/4" for ::1 at 2020-09-26 01:03:08 +0200
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"afda/xh7XjmVZUJnlObIBG+aH1tBrIPWCOfp0qbRsOT5uLxg6fuEbVvz38YC0TbTwVBiL3HiA2vaadcjtUs+sw==", "post_id"=>"8", "id"=>"4"}
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:11:in `destroy'
+  [1m[36mComment Load (3.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? AND "comments"."id" = ? LIMIT ?[0m  [["post_id", 8], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:12:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+  [1m[36mComment Destroy (13.0ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+  [1m[35m (12.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+Redirected to http://localhost:3000/posts/8
+Completed 302 Found in 48ms (ActiveRecord: 31.9ms | Allocations: 3778)
+
+
+Started GET "/posts/8" for ::1 at 2020-09-26 01:03:08 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 7.1ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 3.5ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 13.6ms | Allocations: 1770)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 360ms (Views: 348.0ms | ActiveRecord: 7.9ms | Allocations: 6801)
+
+
+Started GET "/posts/new" for ::1 at 2020-09-26 01:03:18 +0200
+Processing by PostsController#new as HTML
+Filter chain halted as #<Proc:0x000056119426cae0@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 273)
+
+
+Started GET "/posts/new" for ::1 at 2020-09-26 01:03:18 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 855)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 448ms (Views: 432.0ms | ActiveRecord: 0.0ms | Allocations: 5528)
+
+
+Started POST "/posts" for ::1 at 2020-09-26 01:03:30 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"SEAjOkUfLHUwP9XQucMUDQ/IJ+mw17v3+EDalc6S2b9z5RCI11SPLWJQwmTcYuQV3CLK8p32pwzQyiDlaPS9uA==", "post"=>{"title"=>"Petko", "body"=>"Ajmo arama ne seri vise"}, "commit"=>"Save Post"}
+Filter chain halted as #<Proc:0x000056119426cae0@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 357)
+
+
+Started POST "/posts" for ::1 at 2020-09-26 01:03:30 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"SEAjOkUfLHUwP9XQucMUDQ/IJ+mw17v3+EDalc6S2b9z5RCI11SPLWJQwmTcYuQV3CLK8p32pwzQyiDlaPS9uA==", "post"=>{"title"=>"Petko", "body"=>"Ajmo arama ne seri vise"}, "commit"=>"Save Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+  [1m[36mPost Create (12.1ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Petko"], ["body", "Ajmo arama ne seri vise"], ["created_at", "2020-09-25 23:03:30.179555"], ["updated_at", "2020-09-25 23:03:30.179555"]]
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+  [1m[35m (14.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 37ms (ActiveRecord: 26.9ms | Allocations: 3022)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-26 01:03:30 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 5.3ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 1.9ms | Allocations: 739)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.9ms | Allocations: 1775)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 391ms (Views: 382.8ms | ActiveRecord: 5.8ms | Allocations: 6808)
+
+
+Started GET "/" for ::1 at 2020-09-26 01:03:32 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 724)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 391ms (Views: 387.5ms | ActiveRecord: 2.3ms | Allocations: 5223)
+
+
+Started GET "/" for ::1 at 2020-09-26 15:02:21 +0200
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 42.1ms | Allocations: 5288)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 972ms (Views: 886.1ms | ActiveRecord: 17.5ms | Allocations: 16775)
+
+
+Started GET "/" for ::1 at 2020-09-26 15:02:27 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (10.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 734)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 654ms (Views: 642.5ms | ActiveRecord: 10.1ms | Allocations: 5241)
+
+
+Started GET "/posts/8" for ::1 at 2020-09-26 15:02:44 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (5.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (8.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 115.0ms | Allocations: 6779)
+  Rendered comments/_form.html.erb (Duration: 188.8ms | Allocations: 8748)
+  Rendered posts/show.html.erb within layouts/application (Duration: 391.4ms | Allocations: 16315)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1594ms (Views: 1361.9ms | ActiveRecord: 36.2ms | Allocations: 25836)
+
+
+Started GET "/" for ::1 at 2020-09-27 00:40:42 +0200
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 46.4ms | Allocations: 5288)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1146ms (Views: 1049.7ms | ActiveRecord: 21.4ms | Allocations: 16775)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-27 00:40:48 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (2.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 51.5ms | Allocations: 6851)
+  Rendered comments/_form.html.erb (Duration: 60.8ms | Allocations: 8763)
+  Rendered posts/show.html.erb within layouts/application (Duration: 141.4ms | Allocations: 16405)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 498ms (Views: 469.8ms | ActiveRecord: 14.0ms | Allocations: 22238)
+
+
+Started DELETE "/posts/9" for ::1 at 2020-09-27 00:40:51 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+bJmocRdCAFbu4gLRKleSTzMh4b0ClQqN45IKZUWvI5p/YA+Nd3SVZUtFarSnqCekgb68sRE1JflAHbYhowy2Q==", "id"=>"9"}
+Filter chain halted as #<Proc:0x0000560a1d0e3fa8@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Started DELETE "/posts/9" for ::1 at 2020-09-27 00:40:53 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+bJmocRdCAFbu4gLRKleSTzMh4b0ClQqN45IKZUWvI5p/YA+Nd3SVZUtFarSnqCekgb68sRE1JflAHbYhowy2Q==", "id"=>"9"}
+Filter chain halted as #<Proc:0x0000560a1d0e3fa8@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 316)
+
+
+Started GET "/" for ::1 at 2020-09-27 00:40:58 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 725)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 411ms (Views: 407.3ms | ActiveRecord: 2.3ms | Allocations: 5220)
+
+
+Started GET "/posts/new" for ::1 at 2020-09-27 00:41:29 +0200
+Processing by PostsController#new as HTML
+Filter chain halted as #<Proc:0x0000560a1d0e3fa8@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 272)
+
+
+Started GET "/posts/new" for ::1 at 2020-09-27 00:41:34 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 14.5ms | Allocations: 851)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 455ms (Views: 440.1ms | ActiveRecord: 0.0ms | Allocations: 5539)
+
+
+Started GET "/" for ::1 at 2020-09-27 00:41:38 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 734)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 483ms (Views: 479.2ms | ActiveRecord: 3.0ms | Allocations: 5244)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-27 00:41:42 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (4.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 5.3ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 6.7ms | Allocations: 739)
+  Rendered posts/show.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1774)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 455ms (Views: 442.7ms | ActiveRecord: 7.8ms | Allocations: 6802)
+
+
+Started POST "/posts/9/comments" for ::1 at 2020-09-27 00:41:52 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"sX38Yh13mGEO32umSZBmeDfU9mhEUXrYT0PVVm7p1+Ggg5zZx0TH8cVch6PFDcxrqh78nmoy9mtaSstbeX7Lzw==", "comment"=>{"username"=>"blaza05", "body"=>"glup ti je sajt"}, "commit"=>"Save", "post_id"=>"9"}
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mComment Create (15.8ms)[0m  [1m[32mINSERT INTO "comments" ("username", "body", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "blaza05"], ["body", "glup ti je sajt"], ["post_id", 9], ["created_at", "2020-09-26 22:41:52.886678"], ["updated_at", "2020-09-26 22:41:52.886678"]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (69.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 108ms (ActiveRecord: 87.6ms | Allocations: 4125)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-27 00:41:53 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (12.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (11.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 17.7ms | Allocations: 908)
+  Rendered comments/_form.html.erb (Duration: 4.1ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 24.8ms | Allocations: 1911)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 584ms (Views: 554.7ms | ActiveRecord: 24.3ms | Allocations: 6947)
+
+
+Started GET "/" for ::1 at 2020-09-27 00:42:00 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 20.9ms | Allocations: 724)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 485ms (Views: 480.4ms | ActiveRecord: 3.0ms | Allocations: 5216)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:45:05 +0200
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 40.9ms | Allocations: 5288)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1156ms (Views: 1063.6ms | ActiveRecord: 18.4ms | Allocations: 16779)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-28 00:45:08 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 81.9ms | Allocations: 12696)
+  Rendered comments/_form.html.erb (Duration: 70.4ms | Allocations: 3065)
+  Rendered posts/show.html.erb within layouts/application (Duration: 176.7ms | Allocations: 16549)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 619ms (Views: 586.8ms | ActiveRecord: 12.6ms | Allocations: 22382)
+
+
+Started DELETE "/posts/9/comments/5" for ::1 at 2020-09-28 00:45:12 +0200
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q2zn0Mo47kTqt+NeBmWLRs2D8/SQi9S2cHPyK63N5jrTIwFPO7g0ECQhfv+QUnWRY0mOgKDFVAui/czavldobQ==", "post_id"=>"9", "id"=>"5"}
+Filter chain halted as #<Proc:0x00007fe9fc06f750@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 398)
+
+
+Started DELETE "/posts/9/comments/5" for ::1 at 2020-09-28 00:45:14 +0200
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q2zn0Mo47kTqt+NeBmWLRs2D8/SQi9S2cHPyK63N5jrTIwFPO7g0ECQhfv+QUnWRY0mOgKDFVAui/czavldobQ==", "post_id"=>"9", "id"=>"5"}
+Filter chain halted as #<Proc:0x00007fe9fc06f750@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 317)
+
+
+Started GET "/posts/9/edit" for ::1 at 2020-09-28 00:45:20 +0200
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+Filter chain halted as #<Proc:0x0000563df75596b0@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 272)
+
+
+Started GET "/posts/9/edit" for ::1 at 2020-09-28 00:45:24 +0200
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `edit'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1016)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 317ms (Views: 299.6ms | ActiveRecord: 1.8ms | Allocations: 6243)
+
+
+Started PATCH "/posts/9" for ::1 at 2020-09-28 00:45:39 +0200
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"kgO+IstQGPjsMRVh9qQayxlYOq51pCUfCyn1uQxoAYFegaTDUDKSOHEtpx3GqFDgjJzmBfAucdki3+zE8/acUg==", "post"=>{"title"=>"Petko", "body"=>"Napali su me dok sam se vraco kuci!"}, "commit"=>"Save changes", "id"=>"9"}
+Filter chain halted as #<Proc:0x0000563df75596b0@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 347)
+
+
+Started PATCH "/posts/9" for ::1 at 2020-09-28 00:45:39 +0200
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"kgO+IstQGPjsMRVh9qQayxlYOq51pCUfCyn1uQxoAYFegaTDUDKSOHEtpx3GqFDgjJzmBfAucdki3+zE8/acUg==", "post"=>{"title"=>"Petko", "body"=>"Napali su me dok sam se vraco kuci!"}, "commit"=>"Save changes", "id"=>"9"}
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:33:in `update'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:35:in `update'
+  [1m[36mPost Update (9.4ms)[0m  [1m[33mUPDATE "posts" SET "body" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["body", "Napali su me dok sam se vraco kuci!"], ["updated_at", "2020-09-27 22:45:39.841040"], ["id", 9]]
+  ↳ app/controllers/posts_controller.rb:35:in `update'
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:35:in `update'
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 36ms (ActiveRecord: 26.6ms | Allocations: 3844)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-28 00:45:39 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (3.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 5.5ms | Allocations: 896)
+  Rendered comments/_form.html.erb (Duration: 1.0ms | Allocations: 737)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.0ms | Allocations: 1902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 287ms (Views: 277.4ms | ActiveRecord: 6.9ms | Allocations: 6934)
+
+
+Started DELETE "/posts/9/comments/5" for ::1 at 2020-09-28 00:45:42 +0200
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KbBx6Tv/+r6TNz362l6R6aTiQjtvrJNYklUVr6+m0aa5/5d2yn8g6l2hoFtMaW8+Cig/T1/iE+VA2ytevDxf8Q==", "post_id"=>"9", "id"=>"5"}
+  [1m[36mPost Load (3.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:11:in `destroy'
+  [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? AND "comments"."id" = ? LIMIT ?[0m  [["post_id", 9], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:12:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+  [1m[36mComment Destroy (13.7ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+  [1m[35m (16.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 50ms (ActiveRecord: 36.9ms | Allocations: 3775)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-28 00:45:42 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (3.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 5.1ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 3.8ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 333ms (Views: 322.4ms | ActiveRecord: 5.8ms | Allocations: 6798)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:45:43 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 317ms (Views: 313.0ms | ActiveRecord: 3.2ms | Allocations: 5236)
+
+
+Started GET "/posts/8" for ::1 at 2020-09-28 00:45:46 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 8]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 6.5ms | Allocations: 769)
+  Rendered comments/_form.html.erb (Duration: 1.5ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 10.3ms | Allocations: 1771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 281ms (Views: 273.0ms | ActiveRecord: 5.9ms | Allocations: 6808)
+
+
+Started DELETE "/posts/8" for ::1 at 2020-09-28 00:45:48 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"EU13RMcehPVW1c0zAxRY6fI+5jWsRHJi71/lkgwboAGBApHbNp5eoZhDUJKVI6Y+XPSbQZwK8t890dtjH4EuVg==", "id"=>"8"}
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+  [1m[36mPost Destroy (15.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 39ms (ActiveRecord: 30.6ms | Allocations: 2837)
+
+
+Started GET "/posts" for ::1 at 2020-09-28 00:45:48 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 673)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 294ms (Views: 291.7ms | ActiveRecord: 1.6ms | Allocations: 5164)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-28 00:46:25 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (4.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 5.0ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 2.1ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 346ms (Views: 334.9ms | ActiveRecord: 6.8ms | Allocations: 6802)
+
+
+Started POST "/posts/9/comments" for ::1 at 2020-09-28 00:46:39 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"HFmkGpd0UHfSuN40okC+n4rxoh0tp5RHrxtmPsKWdswNp8ShTUcP5xk7MjEu3RSMFzuo6wPEGPS6Engz1QFq4g==", "comment"=>{"username"=>"Petko18", "body"=>"napali su me dok sam se vraco kuci\r\n"}, "commit"=>"Save", "post_id"=>"9"}
+  [1m[36mPost Load (3.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mComment Create (18.3ms)[0m  [1m[32mINSERT INTO "comments" ("username", "body", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Petko18"], ["body", "napali su me dok sam se vraco kuci\r\n"], ["post_id", 9], ["created_at", "2020-09-27 22:46:39.798468"], ["updated_at", "2020-09-27 22:46:39.798468"]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (18.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 59ms (ActiveRecord: 40.6ms | Allocations: 3918)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-28 00:46:39 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (5.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 11.5ms | Allocations: 891)
+  Rendered comments/_form.html.erb (Duration: 2.3ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 16.4ms | Allocations: 1894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 306ms (Views: 295.4ms | ActiveRecord: 7.5ms | Allocations: 6927)
+
+
+Started GET "/" for ::1 at 2020-09-28 00:46:46 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 674)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 343ms (Views: 338.4ms | ActiveRecord: 3.6ms | Allocations: 5163)
+
+
+Started GET "/posts/new" for ::1 at 2020-09-28 00:46:48 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 814)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 402ms (Views: 388.0ms | ActiveRecord: 0.0ms | Allocations: 5483)
+
+
+Started GET "/" for ::1 at 2020-09-28 01:02:02 +0200
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (4.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 89.1ms | Allocations: 5238)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2193ms (Views: 2018.0ms | ActiveRecord: 39.1ms | Allocations: 16736)
+
+
+Started GET "/posts/new" for ::1 at 2020-09-28 01:02:23 +0200
+Processing by PostsController#new as HTML
+Filter chain halted as #<Proc:0x000055c0676312f8@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 281)
+
+
+Started GET "/posts/new" for ::1 at 2020-09-28 01:02:30 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 159.5ms | Allocations: 6773)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 606ms (Views: 589.1ms | ActiveRecord: 0.0ms | Allocations: 11367)
+
+
+Started POST "/posts" for ::1 at 2020-09-28 01:03:06 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"gU0KYiKMibh5jTWSH9S3r7c0kWLcNveTErMArzGkEu266DnQsMcq4CviIiZ6dUe3ZN58efEX62g6Ofrfl8J26g==", "post"=>{"title"=>"Purke (Billy Butcha)", "body"=>"Danas sam razbio zid lol"}, "commit"=>"Save Post"}
+Filter chain halted as #<Proc:0x000055c0676312f8@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 366)
+
+
+Started POST "/posts" for ::1 at 2020-09-28 01:03:06 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"gU0KYiKMibh5jTWSH9S3r7c0kWLcNveTErMArzGkEu266DnQsMcq4CviIiZ6dUe3ZN58efEX62g6Ofrfl8J26g==", "post"=>{"title"=>"Purke (Billy Butcha)", "body"=>"Danas sam razbio zid lol"}, "commit"=>"Save Post"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+  [1m[36mPost Create (8.1ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Purke (Billy Butcha)"], ["body", "Danas sam razbio zid lol"], ["created_at", "2020-09-27 23:03:06.328370"], ["updated_at", "2020-09-27 23:03:06.328370"]]
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+  [1m[35m (13.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 44ms (ActiveRecord: 21.7ms | Allocations: 3235)
+
+
+Started GET "/posts/10" for ::1 at 2020-09-28 01:03:06 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (4.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 59.7ms | Allocations: 6846)
+  Rendered comments/_form.html.erb (Duration: 33.3ms | Allocations: 6696)
+  Rendered posts/show.html.erb within layouts/application (Duration: 133.8ms | Allocations: 14333)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 589ms (Views: 550.8ms | ActiveRecord: 17.5ms | Allocations: 20135)
+
+
+Started POST "/posts/10/comments" for ::1 at 2020-09-28 01:03:26 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"9mLe+rGnYO80ZkJdBcM8ugmpxx98VM2v7dPaI1qha9VmLThlQCe6u/rw3/yT9MJtp2O6a0waTRI/XeTSSTvlgg==", "comment"=>{"username"=>"blaza05", "body"=>"glup si retarde\r\n"}, "commit"=>"Save", "post_id"=>"10"}
+  [1m[36mPost Load (3.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mComment Create (11.2ms)[0m  [1m[32mINSERT INTO "comments" ("username", "body", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "blaza05"], ["body", "glup si retarde\r\n"], ["post_id", 10], ["created_at", "2020-09-27 23:03:26.979103"], ["updated_at", "2020-09-27 23:03:26.979103"]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (14.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 43ms (ActiveRecord: 28.8ms | Allocations: 3913)
+
+
+Started GET "/posts/10" for ::1 at 2020-09-28 01:03:27 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 9.0ms | Allocations: 908)
+  Rendered comments/_form.html.erb (Duration: 3.2ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 14.4ms | Allocations: 1913)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 522ms (Views: 511.5ms | ActiveRecord: 5.6ms | Allocations: 6943)
+
+
+Started POST "/posts/10/comments" for ::1 at 2020-09-28 01:03:41 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"authenticity_token"=>"2KIKcDYupcnA7kz1wuPYRbk+A9zuCvwv3jKapzGVjxVI7ezvx65/nQ540VRU1CaSF/R+qN5EfJIMvKRWIg8BQg==", "comment"=>{"username"=>"Petko18", "body"=>"retarde"}, "commit"=>"Save", "post_id"=>"10"}
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:5:in `create'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[36mComment Create (10.6ms)[0m  [1m[32mINSERT INTO "comments" ("username", "body", "post_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "Petko18"], ["body", "retarde"], ["post_id", 10], ["created_at", "2020-09-27 23:03:41.577723"], ["updated_at", "2020-09-27 23:03:41.577723"]]
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+  [1m[35m (20.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:6:in `create'
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 51ms (ActiveRecord: 33.3ms | Allocations: 3805)
+
+
+Started GET "/posts/10" for ::1 at 2020-09-28 01:03:41 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (4.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 8.4ms | Allocations: 1012)
+  Rendered comments/_form.html.erb (Duration: 7.0ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 18.7ms | Allocations: 2016)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 327ms (Views: 317.9ms | ActiveRecord: 6.5ms | Allocations: 7047)
+
+
+Started GET "/" for ::1 at 2020-09-28 01:03:48 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 734)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 324ms (Views: 318.8ms | ActiveRecord: 2.6ms | Allocations: 5223)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-28 01:04:22 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (3.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 6.6ms | Allocations: 891)
+  Rendered comments/_form.html.erb (Duration: 1.3ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 334ms (Views: 322.1ms | ActiveRecord: 6.6ms | Allocations: 6927)
+
+
+Started GET "/" for ::1 at 2020-09-28 01:04:23 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (8.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 370ms (Views: 359.8ms | ActiveRecord: 8.9ms | Allocations: 5210)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-28 01:05:57 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 6.9ms | Allocations: 891)
+  Rendered comments/_form.html.erb (Duration: 3.0ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 14.0ms | Allocations: 1894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 328ms (Views: 318.8ms | ActiveRecord: 5.5ms | Allocations: 6928)
+
+
+Started GET "/" for ::1 at 2020-09-28 01:05:59 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 735)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 334ms (Views: 330.9ms | ActiveRecord: 2.7ms | Allocations: 5239)
+
+
+Started GET "/posts/9" for ::1 at 2020-09-28 01:06:01 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (5.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 5.6ms | Allocations: 891)
+  Rendered comments/_form.html.erb (Duration: 1.8ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 335ms (Views: 320.7ms | ActiveRecord: 8.2ms | Allocations: 6926)
+
+
+Started GET "/" for ::1 at 2020-09-28 01:09:46 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 366ms (Views: 362.0ms | ActiveRecord: 2.9ms | Allocations: 5216)
+
+
+Started GET "/" for ::1 at 2020-09-28 22:02:46 +0200
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 34.7ms | Allocations: 5290)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 881ms (Views: 813.3ms | ActiveRecord: 15.1ms | Allocations: 16782)
+
+
+Started GET "/posts/10" for ::1 at 2020-09-28 22:02:50 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 87.9ms | Allocations: 12818)
+  Rendered comments/_form.html.erb (Duration: 65.7ms | Allocations: 3056)
+  Rendered posts/show.html.erb within layouts/application (Duration: 209.1ms | Allocations: 16663)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 576ms (Views: 543.3ms | ActiveRecord: 13.6ms | Allocations: 22491)
+
+
+Started DELETE "/posts/10/comments/7" for ::1 at 2020-09-28 22:02:55 +0200
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7bYTTKDc/E5YtU8PJkd9s2FqRlwKU03Rp/319GaK8NN9+fXTUVwmGpYj0q6wcINkz6A7KDodzWx1c8sFdRB+hA==", "post_id"=>"10", "id"=>"7"}
+Filter chain halted as #<Proc:0x00007f8f10069ef0@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 398)
+
+
+Started DELETE "/posts/10/comments/7" for ::1 at 2020-09-28 22:03:01 +0200
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"7bYTTKDc/E5YtU8PJkd9s2FqRlwKU03Rp/319GaK8NN9+fXTUVwmGpYj0q6wcINkz6A7KDodzWx1c8sFdRB+hA==", "post_id"=>"10", "id"=>"7"}
+  [1m[36mPost Load (4.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:11:in `destroy'
+  [1m[36mComment Load (2.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? AND "comments"."id" = ? LIMIT ?[0m  [["post_id", 10], ["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:12:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+  [1m[36mComment Destroy (12.0ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+  [1m[35m (15.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 50ms (ActiveRecord: 34.4ms | Allocations: 3821)
+
+
+Started GET "/posts/10" for ::1 at 2020-09-28 22:03:01 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (2.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 6.6ms | Allocations: 893)
+  Rendered comments/_form.html.erb (Duration: 3.5ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1899)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 389ms (Views: 380.0ms | ActiveRecord: 4.9ms | Allocations: 6935)
+
+
+Started DELETE "/posts/10/comments/8" for ::1 at 2020-09-28 22:03:04 +0200
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tN4I+KxhaJkZtzU9Jk9aGok+y8IhoIJAKRuqewG5IaQkke5nXeGyzdchqJyweKTNJ/S2thHuAv37lZSKEiOv8w==", "post_id"=>"10", "id"=>"8"}
+  [1m[36mPost Load (4.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:11:in `destroy'
+  [1m[36mComment Load (2.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? AND "comments"."id" = ? LIMIT ?[0m  [["post_id", 10], ["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:12:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+  [1m[36mComment Destroy (14.6ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+  [1m[35m (17.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+Redirected to http://localhost:3000/posts/10
+Completed 302 Found in 54ms (ActiveRecord: 39.2ms | Allocations: 3741)
+
+
+Started GET "/posts/10" for ::1 at 2020-09-28 22:03:04 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (3.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 6.6ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 2.8ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 12.7ms | Allocations: 1772)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 485ms (Views: 473.6ms | ActiveRecord: 5.8ms | Allocations: 6800)
+
+
+Started DELETE "/posts/10" for ::1 at 2020-09-28 22:03:06 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DrBSj9BhPhmdwQc9Dh9eQl6FFd3k47lI19nDCF55ynye/7QQIeHkTVNXmpyYKKCV8E9oqdStOfUFV/35TeNEKw==", "id"=>"10"}
+Filter chain halted as #<Proc:0x0000560d5798eee0@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 313)
+
+
+Started DELETE "/posts/10" for ::1 at 2020-09-28 22:03:06 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DrBSj9BhPhmdwQc9Dh9eQl6FFd3k47lI19nDCF55ynye/7QQIeHkTVNXmpyYKKCV8E9oqdStOfUFV/35TeNEKw==", "id"=>"10"}
+  [1m[36mPost Load (2.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+  [1m[36mPost Destroy (8.2ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+  [1m[35m (14.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 36ms (ActiveRecord: 25.9ms | Allocations: 2831)
+
+
+Started GET "/posts" for ::1 at 2020-09-28 22:03:06 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 673)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 345ms (Views: 341.8ms | ActiveRecord: 2.4ms | Allocations: 5163)
+
+
+Started GET "/" for ::1 at 2020-09-28 22:13:04 +0200
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 10.0ms | Allocations: 5704)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1119ms (Views: 1104.2ms | ActiveRecord: 1.2ms | Allocations: 19358)
+
+
+Started GET "/" for ::1 at 2020-09-28 22:14:53 +0200
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 5238)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 126ms (Views: 94.1ms | ActiveRecord: 1.9ms | Allocations: 16714)
+
+
+Started GET "/" for ::1 at 2020-10-01 00:14:13 +0200
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 5238)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 81.9ms | ActiveRecord: 2.0ms | Allocations: 16719)
+
+
+Started GET "/posts/9" for ::1 at 2020-10-01 00:14:15 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.6ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 82.4ms | Allocations: 12700)
+  Rendered comments/_form.html.erb (Duration: 21.7ms | Allocations: 3056)
+  Rendered posts/show.html.erb within layouts/application (Duration: 109.1ms | Allocations: 16545)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 152ms (Views: 139.6ms | ActiveRecord: 3.3ms | Allocations: 22415)
+
+
+Started DELETE "/posts/9" for ::1 at 2020-10-01 00:14:18 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"coXvYqVwrAEaXAFoLYu7UcnZPcMaVy7RB9Sj5JdMSgfiygn9VPB2VdTKnMm7vEWGZxNAtyoZrmzVWp0VhNbEUA==", "id"=>"9"}
+Filter chain halted as #<Proc:0x00007fffd79a9190@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 342)
+
+
+Started DELETE "/posts/9" for ::1 at 2020-10-01 00:14:26 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"coXvYqVwrAEaXAFoLYu7UcnZPcMaVy7RB9Sj5JdMSgfiygn9VPB2VdTKnMm7vEWGZxNAtyoZrmzVWp0VhNbEUA==", "id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+  [1m[36mPost Destroy (3.0ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+  [1m[35m (0.8ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 4.3ms | Allocations: 4574)
+
+
+  
+ActiveRecord::InvalidForeignKey (SQLite3::ConstraintException: FOREIGN KEY constraint failed):
+  
+app/controllers/posts_controller.rb:45:in `destroy'
+Started GET "/" for ::1 at 2020-10-01 00:14:39 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 699)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.3ms | Allocations: 5246)
+
+
+Started GET "/posts/9" for ::1 at 2020-10-01 00:14:40 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (2.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 8.7ms | Allocations: 906)
+  Rendered comments/_form.html.erb (Duration: 2.1ms | Allocations: 758)
+  Rendered posts/show.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1933)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 28.6ms | ActiveRecord: 3.5ms | Allocations: 6984)
+
+
+Started DELETE "/posts/9" for ::1 at 2020-10-01 00:14:42 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AfTuBeD87xhLJnJYN+KgRAt7+qX6wSLwsFZEsCEy7jqRuwiaEXw1TIWw7/mh1V6TpbGH0cqPok1i2HpBMqhgbQ==", "id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+  [1m[36mPost Destroy (2.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 4.1ms | Allocations: 4999)
+
+
+  
+ActiveRecord::InvalidForeignKey (SQLite3::ConstraintException: FOREIGN KEY constraint failed):
+  
+app/controllers/posts_controller.rb:45:in `destroy'
+Started DELETE "/posts/9/comments/6" for ::1 at 2020-10-01 00:14:55 +0200
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"AfTuBeD87xhLJnJYN+KgRAt7+qX6wSLwsFZEsCEy7jqRuwiaEXw1TIWw7/mh1V6TpbGH0cqPok1i2HpBMqhgbQ==", "post_id"=>"9", "id"=>"6"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:11:in `destroy'
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ? AND "comments"."id" = ? LIMIT ?[0m  [["post_id", 9], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/comments_controller.rb:12:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+  [1m[36mComment Destroy (30.8ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+  [1m[35m (11.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/comments_controller.rb:13:in `destroy'
+Redirected to http://localhost:3000/posts/9
+Completed 302 Found in 52ms (ActiveRecord: 43.1ms | Allocations: 5536)
+
+
+Started GET "/posts/9" for ::1 at 2020-10-01 00:14:55 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 1.5ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 1.5ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1772)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.5ms | Allocations: 6804)
+
+
+Started DELETE "/posts/9" for ::1 at 2020-10-01 00:14:58 +0200
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LF0ZplvB8wRzlDht1wc2Piz9Q+7gnMG69C1GoPO5jom8Ev85qkEpUL0CpcxBMMjpgjc+mtDSQQcmo3hR4CMA3g==", "id"=>"9"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:44:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+  [1m[36mPost Destroy (2.0ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+  [1m[35m (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:45:in `destroy'
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 13ms (ActiveRecord: 5.7ms | Allocations: 4582)
+
+
+Started GET "/posts" for ::1 at 2020-10-01 00:14:58 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 610)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.4ms | Allocations: 5114)
+
+
+Started GET "/posts/new" for ::1 at 2020-10-01 00:15:17 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 851)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms | Allocations: 5529)
+
+
+Started POST "/posts" for ::1 at 2020-10-01 00:15:50 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"iVEusok3RUhpxBGGq3wjQKHeU7NLNNc0CSyc78m6vGWy9B0AG3zmEDurBjLO3dNYcjS+qGYVy88hpmafb9zYYg==", "post"=>{"title"=>"RIS-TIC R.A.M.L.", "body"=>"Uspjesno poslovanje u Minhenu"}, "commit"=>"Save Post"}
+Filter chain halted as #<Proc:0x00007fffd79a9190@/home/baustelac/.rvm/gems/ruby-2.5.0/gems/actionpack-6.0.3.3/lib/action_controller/metal/http_authentication.rb:73> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started POST "/posts" for ::1 at 2020-10-01 00:15:50 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"iVEusok3RUhpxBGGq3wjQKHeU7NLNNc0CSyc78m6vGWy9B0AG3zmEDurBjLO3dNYcjS+qGYVy88hpmafb9zYYg==", "post"=>{"title"=>"RIS-TIC R.A.M.L.", "body"=>"Uspjesno poslovanje u Minhenu"}, "commit"=>"Save Post"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+  [1m[36mPost Create (2.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "RIS-TIC R.A.M.L."], ["body", "Uspjesno poslovanje u Minhenu"], ["created_at", "2020-09-30 22:15:51.000803"], ["updated_at", "2020-09-30 22:15:51.000803"]]
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:20:in `create'
+Redirected to http://localhost:3000/posts/11
+Completed 302 Found in 20ms (ActiveRecord: 4.7ms | Allocations: 4446)
+
+
+Started GET "/posts/11" for ::1 at 2020-10-01 00:15:51 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 11]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 1.8ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 1.7ms | Allocations: 739)
+  Rendered posts/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1776)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.7ms | Allocations: 6805)
+
+
+Started GET "/" for ::1 at 2020-10-01 00:15:52 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 673)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.4ms | Allocations: 5206)
+
+
+Started GET "/posts/11" for ::1 at 2020-10-01 00:15:57 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 11]]
+  ↳ app/views/comments/_comments.html.erb:2
+  Rendered comments/_comments.html.erb (Duration: 2.8ms | Allocations: 768)
+  Rendered comments/_form.html.erb (Duration: 3.6ms | Allocations: 736)
+  Rendered posts/show.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1771)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.9ms | Allocations: 6797)
+
+
+Started GET "/posts/11/edit" for ::1 at 2020-10-01 00:16:04 +0200
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `edit'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 979)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 20.6ms | ActiveRecord: 0.5ms | Allocations: 6185)
+
+
+Started GET "/" for ::1 at 2020-10-01 00:16:06 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:12
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 673)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.5ms | Allocations: 5168)
+
+
