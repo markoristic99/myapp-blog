@@ -13316,3 +13316,166 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 30ms (Views: 24.2ms | ActiveRecord: 2.2ms | Allocations: 10360)
 
 
+Started GET "/" for ::1 at 2020-10-05 21:25:38 +0200
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 5755)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 207ms (Views: 193.1ms | ActiveRecord: 2.7ms | Allocations: 24287)
+
+
+Started GET "/posts/14" for ::1 at 2020-10-05 21:26:08 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 14], ["LIMIT", 1]]
+  ↳ app/views/comments/_comments.html.erb:4
+  Rendered comments/_comments.html.erb (Duration: 32.9ms | Allocations: 7369)
+  Rendered comments/_form.html.erb (Duration: 32.9ms | Allocations: 7288)
+  Rendered posts/show.html.erb within layouts/application (Duration: 71.7ms | Allocations: 15913)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 122ms (Views: 93.3ms | ActiveRecord: 2.0ms | Allocations: 26390)
+
+
+Started GET "/posts/14/edit" for ::1 at 2020-10-05 21:26:11 +0200
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:28:in `edit'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/edit.html.erb within layouts/application (Duration: 1.2ms | Allocations: 621)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.4ms | Allocations: 6785)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:26:27 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 949)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 0.5ms | Allocations: 5649)
+
+
+Started GET "/posts/13" for ::1 at 2020-10-05 21:26:28 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 13], ["LIMIT", 1]]
+  ↳ app/views/comments/_comments.html.erb:4
+  Rendered comments/_comments.html.erb (Duration: 5.5ms | Allocations: 1117)
+  Rendered comments/_form.html.erb (Duration: 1.6ms | Allocations: 633)
+  Rendered posts/show.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2520)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 33.4ms | ActiveRecord: 1.2ms | Allocations: 7700)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:26:31 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 736)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.4ms | Allocations: 5247)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:54:50 +0200
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 28.5ms | Allocations: 5287)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 769ms (Views: 708.0ms | ActiveRecord: 12.8ms | Allocations: 16843)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:57:01 +0200
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 32.3ms | Allocations: 5287)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 748ms (Views: 665.0ms | ActiveRecord: 13.1ms | Allocations: 16908)
+
+
+Started GET "/posts/14" for ::1 at 2020-10-05 21:57:03 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (5.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Exists? (2.7ms)[0m  [1m[34mSELECT 1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 14], ["LIMIT", 1]]
+  ↳ app/views/comments/_comments.html.erb:4
+  Rendered comments/_comments.html.erb (Duration: 57.6ms | Allocations: 6930)
+  Rendered comments/_form.html.erb (Duration: 31.0ms | Allocations: 6829)
+  Rendered posts/show.html.erb within layouts/application (Duration: 118.0ms | Allocations: 14554)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 404ms (Views: 356.3ms | ActiveRecord: 17.1ms | Allocations: 20373)
+
+
+Started GET "/about" for ::1 at 2020-10-05 21:57:08 +0200
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 5.1ms | Allocations: 130)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 295ms (Views: 285.8ms | ActiveRecord: 0.0ms | Allocations: 5239)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:57:09 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 740)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 282ms (Views: 278.1ms | ActiveRecord: 2.9ms | Allocations: 5227)
+
+
+Started GET "/posts/13" for ::1 at 2020-10-05 21:57:11 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPost Load (3.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Exists? (4.6ms)[0m  [1m[34mSELECT 1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 13], ["LIMIT", 1]]
+  ↳ app/views/comments/_comments.html.erb:4
+  Rendered comments/_comments.html.erb (Duration: 9.1ms | Allocations: 844)
+  Rendered comments/_form.html.erb (Duration: 0.9ms | Allocations: 433)
+  Rendered posts/show.html.erb within layouts/application (Duration: 11.7ms | Allocations: 1546)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 301ms (Views: 290.1ms | ActiveRecord: 7.9ms | Allocations: 6573)
+
+
+Started GET "/posts/new" for ::1 at 2020-10-05 21:57:12 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 608)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 306ms (Views: 293.6ms | ActiveRecord: 0.0ms | Allocations: 5275)
+
+
+Started GET "/" for ::1 at 2020-10-05 21:57:17 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 727)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 303ms (Views: 299.9ms | ActiveRecord: 3.0ms | Allocations: 5208)
+
+
