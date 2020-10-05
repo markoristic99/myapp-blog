@@ -1,5 +1,8 @@
-<div class = "container-fluid m-2 pt-2">
-    <h1> New Post</h1>
+<div class = "new">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">New post</h1>
+    </div>
+
     
     <%= form_for :post, url: posts_path do |f|%>
         <% if @post.errors.any? %>
@@ -9,17 +12,15 @@
         <%end%>
 
         <p>
-            <%= f.label :title %><br>
-            <%= f.text_field :title %>
+            <%= f.text_field :title, :placeholder => "title" %>
         </p>
 
         <p>
-            <%= f.label :body, "Text" %><br>
-            <%= f.text_area(:body, {:class => 'form-control'})%>
+            <%= f.text_area(:body, {:class => 'form-control',:id => "form_textarea", :placeholder => "type in the contents of your post..."})%>
         </p>
 
         <p>
-            <%= f.submit("Save Post", {:class => 'btn btn-primary'}) %>
+            <%= f.submit("Save Post", {:class => 'btn btn-outline-primary ml-md-auto'}) %>
         </p>
     <%end%>
 </div>

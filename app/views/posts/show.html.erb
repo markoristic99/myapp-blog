@@ -1,7 +1,11 @@
-<div class = "container-fluid m-2 pt-2">
 
 
-    <h2><%= @post.title %></h2>
+<div class = "new">
+    <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4"><%= @post.title %></h1>
+    </div>
+
+
     <p><%= @post.body %></p>
     
     <hr>
@@ -10,7 +14,7 @@
     <%= link_to 'Delete', post_path(@post),
             method: :delete,
             data: {confirm: 'Are you sure?'},
-             :class => 'btn btn-danger' %>
+             :class => 'btn btn-outline-danger' %>
     <hr>
 
    <%= render 'comments/comments' %> 

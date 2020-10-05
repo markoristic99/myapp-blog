@@ -1,4 +1,7 @@
-<h1> Edit Post</h1>
+<div class = "new">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<h1 class="display-4"> Edit Post</h1>
+</div>
 <%= form_for :post, url: post_path(@post), method: :patch do |f|%>
         <% if @post.errors.any? %>
             <% @post.errors.full_messages.each do |msg|%>
@@ -7,16 +10,15 @@
         <%end%>
 
     <p>
-        <%= f.label :title %><br>
         <%= f.text_field(:title)%>
     </p>
 
     <p>
-        <%= f.label :body  %><br>
-        <%= f.text_area(:body, {:class => 'form-control'})%>
+        <%= f.text_area(:body, {:class => 'form-control', :id => "form_textarea"})%>
     </p>
 
     <p>
-        <%= f.submit("Save changes", {:class => 'btn btn-primary'}) %>
+        <%= f.submit("Save changes", {:class => 'btn btn-outline-primary'}) %>
     </p>
 <%end%>
+</div>

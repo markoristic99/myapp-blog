@@ -1,9 +1,13 @@
-<h3> Comments </h3>
+<div class="px-3 py-3 pb-md-4 mx-auto text-center">
+<h2 class= "font-weight-normal"> Comments </h2>
+</div>
+    <% if @post.comments.any?%>
     <% @post.comments.each do |comment|%>
-        <div class="card bg-light text-dark">
+        <div class="card mb-4 shadow-sm border-0 text-dark bg-light" style="width: 31.25rem;">
             <div class="card-body">
             
-            <p><strong><%= comment.username %></strong>: <%= comment.body%> 
+            <p class="card-text"><strong>
+            <%= comment.username%></strong>: <%= comment.body%> 
             
             <%= link_to '[x]', [comment.post, comment], 
                 method: :delete,
@@ -14,3 +18,17 @@
         </div>
         <br>
     <%end%>
+    <%else%>
+    <p> No comments </p>
+    <%end%>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type= "text/javascript">
+      textarea = document.querySelector("#form_textarea"); 
+      textarea.addEventListener('input', autoResize, false); 
+  
+    function autoResize() { 
+        this.style.height = 'auto'; 
+        this.style.height = this.scrollHeight + 'px'; 
+    }
+    </script>
