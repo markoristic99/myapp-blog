@@ -13479,3 +13479,125 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 303ms (Views: 299.9ms | ActiveRecord: 3.0ms | Allocations: 5208)
 
 
+Started GET "/" for ::1 at 2020-10-05 22:24:45 +0200
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 5287)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 119ms (Views: 98.7ms | ActiveRecord: 1.8ms | Allocations: 18214)
+
+
+Started GET "/posts/14" for ::1 at 2020-10-05 22:24:47 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 14], ["LIMIT", 1]]
+  ↳ app/views/comments/_comments.html.erb:4
+  Rendered comments/_comments.html.erb (Duration: 33.5ms | Allocations: 7376)
+  Rendered comments/_form.html.erb (Duration: 35.9ms | Allocations: 6810)
+  Rendered posts/show.html.erb within layouts/application (Duration: 72.5ms | Allocations: 14985)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 128ms (Views: 102.1ms | ActiveRecord: 5.1ms | Allocations: 25941)
+
+
+Started GET "/" for ::1 at 2020-10-05 22:24:49 +0200
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 12.5ms | Allocations: 4622)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 51.9ms | ActiveRecord: 2.1ms | Allocations: 10521)
+
+
+Started GET "/" for ::1 at 2020-10-08 02:32:55 +0200
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 32.9ms | Allocations: 5287)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 821ms (Views: 748.0ms | ActiveRecord: 16.2ms | Allocations: 16870)
+
+
+Started GET "/posts/13" for ::1 at 2020-10-08 02:32:59 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPost Load (2.0ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:9:in `show'
+  Rendering posts/show.html.erb within layouts/application
+  [1m[36mComment Exists? (3.2ms)[0m  [1m[34mSELECT 1 AS one FROM "comments" WHERE "comments"."post_id" = ? LIMIT ?[0m  [["post_id", 13], ["LIMIT", 1]]
+  ↳ app/views/comments/_comments.html.erb:4
+  Rendered comments/_comments.html.erb (Duration: 45.2ms | Allocations: 6930)
+  Rendered comments/_form.html.erb (Duration: 26.6ms | Allocations: 6810)
+  Rendered posts/show.html.erb within layouts/application (Duration: 94.5ms | Allocations: 14535)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 433ms (Views: 400.7ms | ActiveRecord: 14.7ms | Allocations: 20386)
+
+
+Started GET "/" for ::1 at 2020-10-08 02:33:03 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (3.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 736)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 298ms (Views: 293.7ms | ActiveRecord: 3.1ms | Allocations: 5255)
+
+
+Started GET "/about" for ::1 at 2020-10-08 02:33:04 +0200
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 4.4ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 323ms (Views: 315.6ms | ActiveRecord: 0.0ms | Allocations: 5211)
+
+
+Started GET "/" for ::1 at 2020-10-08 02:33:06 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 740)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 359ms (Views: 356.0ms | ActiveRecord: 2.2ms | Allocations: 5262)
+
+
+Started GET "/" for ::1 at 2020-10-08 02:33:12 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 340ms (Views: 337.3ms | ActiveRecord: 1.8ms | Allocations: 5230)
+
+
+Started GET "/about" for ::1 at 2020-10-08 02:33:12 +0200
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 328ms (Views: 325.5ms | ActiveRecord: 0.0ms | Allocations: 4504)
+
+
+Started GET "/" for ::1 at 2020-10-08 02:33:14 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:9
+  Rendered posts/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 310ms (Views: 307.6ms | ActiveRecord: 1.9ms | Allocations: 5227)
+
+
